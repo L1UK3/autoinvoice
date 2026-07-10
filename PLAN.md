@@ -1,4 +1,6 @@
-# Auto-Invoice: Implementation Plan & Checklist
+AI generated plan using /grill-me
+
+## Auto-Invoice: Implementation Plan & Checklist
 
 This document details the step-by-step plan for building the automated weekly invoice generator and sender. 
 
