@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
+from app.routes import auth, protected
 
 
 def create_app():
@@ -14,9 +15,6 @@ def create_app():
         version="1.0.0" 
     )
     
+    app.include_router(auth.router)
+    app.include_router(protected.router)
     return app
-
-app = create_app()
-
-if __name__ == "__main__":
-    uvicorn.run("app:app", host="[IP_ADDRESS]", port=8000, reload=True)
