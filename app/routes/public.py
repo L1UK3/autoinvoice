@@ -1,6 +1,8 @@
+from fastapi import APIRouter
 
+router = APIRouter(prefix="/public", tags=["public"])
 
 # Health Check
-@app.get('/')
+@router.get('/')
 def health_check():
     return {"status": "ok"}

@@ -1,7 +1,10 @@
 '.xlsx
-
 .env
-
 __pycache__/*
-
 .venv/*
+node_modules/*
+
+# Agent configs
+.agents/
+.playwright-mcp/
+skills-lock.json

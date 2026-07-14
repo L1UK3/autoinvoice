@@ -1,7 +1,6 @@
-import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
-from app.routes import auth, protected
+from app.routes import auth, protected, public
 
 
 def create_app():
@@ -17,4 +16,5 @@ def create_app():
     
     app.include_router(auth.router)
     app.include_router(protected.router)
+    app.include_router(public.router)
     return app
